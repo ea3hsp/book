@@ -65,19 +65,22 @@ func (a *API) Init() {
 	router.HandleFunc("/", a.homePage).Methods("GET")
 	// library
 	router.HandleFunc("/book/isbn/{isbn}", a.viewBook).Methods("GET")
-	router.HandleFunc("/book/create", a.viewCreateBook).Methods("GET")
 	router.HandleFunc("/books", a.viewBooks).Methods("GET")
+	router.HandleFunc("/book/create", a.viewCreateBook).Methods("GET")
 	// Authors
 	router.HandleFunc("/author/authid/{authid}", a.viewAuthor).Methods("GET")
 	router.HandleFunc("/authors", a.viewAuthors).Methods("GET")
+	//router.HandleFunc("/book/create", a.viewCreateAuthor).Methods("GET")
 	// Publishers
 	router.HandleFunc("/publisher/pubid/{pubid}", a.viewPublisher).Methods("GET")
 	router.HandleFunc("/publishers", a.viewPublishers).Methods("GET")
+	//router.HandleFunc("/book/create", a.viewCreatePublisher).Methods("GET")
 	// Api handle funcs
 	api := router.PathPrefix("/api").Subrouter()
 	// IBA REST function handlers
 	api.HandleFunc("/book", a.createBook).Methods("POST")
 	api.HandleFunc("/author", a.createAuth).Methods("POST")
+	api.HandleFunc("/publisher", a.createPublisher).Methods("POST")
 	// Used middlewares
 	// logging middleware
 	router.Use(a.loggingMiddleware)

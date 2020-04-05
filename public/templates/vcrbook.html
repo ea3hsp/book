@@ -1,70 +1,72 @@
 {{define "title"}}Nuevo Libro{{end}} {{define "content"}}
-<div id="ficha">
-  <div class="field">
-    <label class="label">ISBN</label>
-    <div class="control">
-      <input class="input" type="number" placeholder="ISBN" />
-    </div>
-  </div>
-  <div class="field">
-    <label class="label">Titulo</label>
-    <div class="control">
-      <input class="input" type="text" placeholder="Titulo" />
-    </div>
-  </div>
-  <div class="field">
-    <label class="label">Autor</label>
-    <div class="control">
-      <div class="select">
-        <select>
-          {{range .}}
-          <option>{{.Name}} {{.LastName}}</option>
-          {{end}}
-        </select>
+<form action="">
+  <div id="ficha">
+    <div class="field">
+      <label class="label">ISBN</label>
+      <div class="control">
+        <input class="input" type="number" placeholder="ISBN" />
       </div>
     </div>
-  </div>
-  <div class="field">
-    <label class="label">Editorial</label>
-    <div class="control">
-      <div class="select">
-        <select>
-          <option>1</option>
-        </select>
+    <div class="field">
+      <label class="label">Titulo</label>
+      <div class="control">
+        <input class="input" type="text" placeholder="Titulo" />
       </div>
     </div>
-  </div>
-  <div class="field">
-    <label class="label">Fecha edición</label>
-    <div class="control">
-      <input class="input" type="date" max="31-12-2099" required required pattern="[0-9]{2}-[0-9]{2}-[0-9]{4}"/>
+    <div class="field">
+      <label class="label">Autor</label>
+      <div class="control">
+        <div class="select">
+          <select>
+            {{range .}}
+            <option>{{.Name}} {{.LastName}}</option>
+            {{end}}
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="field">
+      <label class="label">Editorial</label>
+      <div class="control">
+        <div class="select">
+          <select>
+            <option>1</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="field">
+      <label class="label">Fecha edición</label>
+      <div class="control">
+        <input class="input" type="date" max="31-12-2099" required required pattern="[0-9]{2}-[0-9]{2}-[0-9]{4}" />
+      </div>
+    </div>
+    <div class="field">
+      <label class="label">Sinopsis</label>
+      <div class="control">
+        <textarea class="textarea" placeholder="sinopsis" id="desc"></textarea>
+      </div>
+    </div>
+    <div class="field">
+      <label class="label">Contiene cubierta?</label>
+      <label class="checkbox">
+        <input type="checkbox" />
+        Sí
+      </label>
+    </div>
+    <div class="field">
+      <label class="label">Fecha compra</label>
+      <div class="control">
+        <input class="input" type="date" max="31-12-2099" required required pattern="[0-9]{2}-[0-9]{2}-[0-9]{4}" />
+      </div>
+    </div>
+    <div class="field">
+      <label class="label">Leido?</label>
+      <label class="checkbox">
+        <input type="checkbox" />
+        Sí
+      </label>
     </div>
   </div>
-  <div class="field">
-    <label class="label">Sinopsis</label>
-    <div class="control">
-      <textarea class="textarea" placeholder="sinopsis" id="desc"></textarea>
-    </div>
-  </div>
-  <div class="field">
-    <label class="label">Contiene cubierta?</label>
-    <label class="checkbox">
-      <input type="checkbox" />
-      Sí
-    </label>
-  </div>
-  <div class="field">
-    <label class="label">Fecha compra</label>
-    <div class="control">
-      <input class="input" type="date" max="31-12-2099" required required pattern="[0-9]{2}-[0-9]{2}-[0-9]{4}"/>
-    </div>
-  </div>
-  <div class="field">
-    <label class="label">Leido?</label>
-    <label class="checkbox">
-      <input type="checkbox" />
-      Sí
-    </label>
-  </div>
-</div>
+</form>
 {{end}}

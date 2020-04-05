@@ -11,10 +11,6 @@ import (
 
 func (a *API) homePage(w http.ResponseWriter, r *http.Request) {
 	http.Redirect(w, r, "/books", http.StatusTemporaryRedirect)
-	/* err := a.render.RenderTemplate(w, "index.tmpl", nil)
-	if err != nil {
-		a.returnError(err, w, r)
-	} */
 }
 
 func (a *API) viewBook(w http.ResponseWriter, r *http.Request) {
