@@ -1,0 +1,45 @@
+{{define "title"}}Biblioteca{{end}} {{define "content"}}
+<section class="hero">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">
+        Book
+      </h1>
+      <h2 class="subtitle">
+        Biblioteca
+      </h2>
+    </div>
+  </div>
+</section>
+{{range .}}
+<div class="box">
+  <article class="media">
+    <div class="media-left">
+      <figure class="image is-64x64">
+        <img src="/assets/images/{{.BookID}}.jpg" alt="Image" />
+      </figure>
+    </div>
+    <div class="media-content">
+      <div class="content">
+        <p>
+          <strong class="has-text-danger">{{.Title}}</strong>
+          <br />
+          {{.AuthorID}}
+          <br />
+          {{.Publisher}}
+        </p>
+      </div>
+      <nav class="level is-mobile">
+        <div class="level-left">
+          <a
+            class="button is-small is-info is-light is-link"
+            href="/book/isbn/{{.BookID}}"
+          >
+            ver
+          </a>
+        </div>
+      </nav>
+    </div>
+  </article>
+</div>
+{{end}} {{end}}

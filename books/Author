@@ -1,0 +1,30 @@
+[
+	{
+		"authid": "1d58b4a80d0c6ab3bbf8a1e74b8b6e91",
+		"borndate": "1942-10-23T00:00:00Z",
+		"country": "us",
+		"deathdate": "2008-11-04T00:00:00Z",
+		"lastname": "Crichton",
+		"name": "Michael",
+		"picture": true
+	},
+	{
+		"authid": "f148e8215142538b0f84e443102da484",
+		"borndate": "1975-12-19T00:00:00Z",
+		"country": "us",
+		"deathdate": "0001-01-01T00:00:00Z",
+		"lastname": "Sanderson",
+		"name": "Brandon",
+		"picture": true
+	},
+	{
+		"authid": "d802d1fda3193b0948b21da9c3a198c7",
+		"name": "Naoki",
+		"lastname": "Urasawa",
+		"picture": true,
+		"country": "jp",
+		"borndate": "1960-01-02T00:00:00Z",
+		"deathdate": "0001-01-01T00:00:00Z",
+		"bio": "Se licenció en Ciencias económicas en la Universidad Meisei. En 2008, Urasawa ocupa plaza de profesor en la Universidad de Nagoya impartiendo clases de manga.Su primera publicación fue Return en 1981, obra con la que consiguió el premio al mejor autor novel de la editorial Shōgakukan.3 Tres de sus series se han adaptado al anime: Yawara! (1986-1993), Master Keaton (1988-1994), y Monster (1994-2002). Se ha versionado 20th Century Boys (2000-2006) en una serie de tres películas lanzadas en 2008 y 2009. Ha recibido tres veces el Premio de Manga Shōgakukan, dos veces el Premio Cultural Tezuka Osamu, y una vez el Premio Kodansha de Manga. Fusanosuke Natsume dijo que Urasawa desarrolló su propio estilo con el manga Monster, descrito como realista. A lo largo de su carrera, el mangaka ha escrito de manera simultánea dos series y colabora frecuentemente con Takashi Nagasaki.Como guionista se caracteriza por una narrativa densa y con varias tramas interconectadas, el dominio del suspenso y los toques inteligentes a los clásicos del manga y anime así como el uso frecuente de personajes y situaciones alemanas. Sus obras son de temática diversa, aunque sus últimos mangas son de Suspenso. Es un reconocido guionista y su dibujo se caracteriza por unos paisajes muy detallados, y facciones realistas para sus personajes. Urasawa es el conductor de una serie documental producida por la NHK titulada Urasawa Naoki no Manben (浦沢直樹の漫勉), donde se entrevista y analiza el trabajo de diferentes mangakas y el estilo diferente de cada uno.La serie ha tenido varias temporadas desde su inicio en 2014, en marzo de 2017 se lanzó la cuarta temporada. En su faceta musical, Urasawa comenzó a tocar la guitarra en la preparatoria. Bajo el sobrenombre de Bob Lennon ha escrito y publicado varias canciones, en 2016 lanzó su segundo álbum, que produjo y escribió él mismo."
+	}
+]

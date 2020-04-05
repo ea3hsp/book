@@ -1,0 +1,33 @@
+{{define "title"}}Editorial{{end}} {{define "content"}}
+<div id="ficha">
+  <h2 class="title is-2">{{.PublisherID}}</h2>
+  <table class="table">
+    <tbody>
+      <tr>
+        <td>Nombre</td>
+        <td>{{.Name}}</td>
+      </tr>
+      <tr>
+        <td>Tipo</td>
+        <td>{{.Type}}</td>
+      </tr>
+      <tr>
+        <td>Dirección</td>
+        <td>{{.Address}}</td>
+      </tr>
+      <tr>
+        <td>Email</td>
+        <td>{{.Email}}</td>
+      </tr>
+      <tr>
+        <td>URL</td>
+        <td>{{.URL}}</td>
+      </tr>
+      <tr>
+        <td>Pais</td>
+        <td>{{.Country}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+{{end}}

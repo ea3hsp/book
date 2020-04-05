@@ -1,0 +1,28 @@
+{{define "title"}}Escritor{{end}}
+{{define "content"}}
+    <section class="hero">
+        <div class="hero-body">
+            <h1 class="title">
+                Book
+            </h1>
+            <h2 class="subtitle">
+                Escritor
+            </h2>
+        </div>
+    </section>
+    <div id="ficha">
+        <h1 class="title is-1">{{.Name}} {{.LastName}}</h1>
+        <h2 class="title is-2">{{.Country}}</h2>
+        <figure class="image is-64x64">
+            <img src="/assets/images/flags/{{.Country}}.png" alt="{{.Country}}">
+        </figure>
+        <h3 class="title is-3">{{.GetBornDate }}</h3>
+        </hr>
+        <p align="justify">{{.Bio}}</p>
+        {{if .Picture}}
+        <figure class="image is-3by4">
+            <img src="/assets/images/{{.AuthorID}}.jpg" alt="{{.AuthorID}}" height="500" width="329">
+        </figure>
+        {{end}}
+    </div>
+{{end}}

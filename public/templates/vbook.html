@@ -1,0 +1,13 @@
+{{define "title"}}Libro{{end}}
+{{define "content"}}
+    <div id="ficha">
+        <h1 class="title is-1">{{.Title}}</h1>
+        <h2 class="title is-2">{{.AuthorID}}</h2>
+        <h3 class="title is-3">{{.Publisher}}</h3>
+        </hr>
+        <p align="justify">{{.Description}}</p>
+        <figure class="image is-3by4">
+            <img src="/assets/images/{{.BookID}}.jpg" alt="{{.BookID}}" height="500" width="329">
+        </figure>
+    </div>
+{{end}}

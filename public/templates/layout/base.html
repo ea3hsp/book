@@ -1,0 +1,39 @@
+{{ define "base" }}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/bulma.min.css" />
+    <title>{{block "title" .}} {{end}}</title>
+  </head>
+  <body>
+    <nav class="navbar" role="navigation" aria-label="main navigation"></nav>
+    <div class="container">
+      <div class="columns">
+        <div class="column is-one-fifth">
+          <aside class="menu">
+            <p class="menu-label">
+              VISTA
+            </p>
+            <ul class="menu-list">
+              <li><a href="/books">Biblioteca</a></li>
+              <li><a href="/authors">Escritores</a></li>
+              <li><a href="/publishers">Editoriales</a></li>
+            </ul>
+            <p class="menu-label">
+              EDICION
+            </p>
+            <ul class="menu-list">
+              <li><a href="/book/create">Libro</a></li>
+            </ul>
+          </aside>
+        </div>
+        <div class="column">
+          {{template "content" .}}
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+{{ end }}
