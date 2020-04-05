@@ -30,13 +30,13 @@
 		"title": "20th Century Boys nº 06/11 (Nueva edición)"
 	},
 	{
-		"isbn": "9788401021008",
-		"hascover": true,
-		"title": "Dientes de dragón",
 		"author": "Michael Crichton",
+		"boughtdate": "2020-04-03T15:09:55Z",
 		"description": "1876.Tribus de indios en pie de guerra asolan los territorios del oeste de Estados Unidos. A este paisaje primitivo y hostil llegan las expediciones dirigidas por dos paleontólogos rivales en busca de fósiles de dinosaurios. William Johnson, un universitario rico y consentido, se incorpora al grupo de Othniel Charles Marsh, pero cuando este sospecha de sus intenciones y le abandona, William se une a su archienemigo, Edward Drinker Cope. Ignora que está a punto de hacer un descubrimiento histórico que deberá defender de los personajes más peligrosos del Salvaje Oeste.A partir de un suceso real, Crichton alumbra un período histórico tan olvidado como fascinante en un nuevo thriller paleontológico destinado a convertirse en un clásico a la altura de sus éxitos más memorables.",
-		"publisher": "PLAZA \u0026 JANES EDITORES",
+		"hascover": true,
+		"isbn": "9788401021008",
 		"publishdate": "2018-05-01T00:00:00Z",
-		"boughtdate": "2020-04-03T15:09:55Z"
+		"publisher": "PLAZA \u0026 JANES EDITORES",
+		"title": "Dientes de dragón"
 	}
 ]

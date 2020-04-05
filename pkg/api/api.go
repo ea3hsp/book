@@ -70,11 +70,11 @@ func (a *API) Init() {
 	// Authors
 	router.HandleFunc("/author/authid/{authid}", a.viewAuthor).Methods("GET")
 	router.HandleFunc("/authors", a.viewAuthors).Methods("GET")
-	//router.HandleFunc("/book/create", a.viewCreateAuthor).Methods("GET")
+	//router.HandleFunc("/author/create", a.viewCreateAuthor).Methods("GET")
 	// Publishers
 	router.HandleFunc("/publisher/pubid/{pubid}", a.viewPublisher).Methods("GET")
 	router.HandleFunc("/publishers", a.viewPublishers).Methods("GET")
-	//router.HandleFunc("/book/create", a.viewCreatePublisher).Methods("GET")
+	//router.HandleFunc("/publisher/create", a.viewCreatePublisher).Methods("GET")
 	// Api handle funcs
 	api := router.PathPrefix("/api").Subrouter()
 	// IBA REST function handlers
